@@ -1,3 +1,17 @@
+// --- Pendaftaran Service Worker ---
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/TicTacToe/service-worker.js')
+      .then(registration => {
+        console.log('Service Worker registered with scope:', registration.scope);
+      })
+      .catch(error => {
+        console.log('Service Worker registration failed:', error);
+      });
+  });
+}
+
+// --- Kode Game Tic-Tac-Toe ---
 const board = document.getElementById("board");
 const statusText = document.getElementById("status");
 const playerXInput = document.getElementById("playerX");
@@ -121,16 +135,3 @@ function swapSymbols() {
   updateScore();
   updateStatus();
 }
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/TicTacToe/service-worker.js')
-      .then(registration => {
-        console.log('Service Worker registered with scope:', registration.scope);
-      })
-      .catch(error => {
-        console.log('Service Worker registration failed:', error);
-      });
-  });
-}
-
-
