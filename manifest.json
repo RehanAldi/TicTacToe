@@ -10,7 +10,13 @@
   "orientation": "portrait",
   "lang": "id",
   "dir": "ltr",
-  "categories": ["game", "puzzle", "entertainment"],
+  "categories": [
+    "game",
+    "puzzle",
+    "entertainment"
+    
+  ],
+  "iarc_rating_id": "e10plus",
   "prefer_related_applications": false,
   "icons": [
     {
@@ -19,7 +25,7 @@
       "type": "image/png"
     },
     {
-      "src": "icons/icon-512.png"
+      "src": "icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
