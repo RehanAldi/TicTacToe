@@ -1,56 +1,38 @@
 {
-  "id": "/tic-tac-toe-app",
-  "name": "Tic Tac Toe Game",
+  "id": "/",
+  "name": "Tic Tac Toe",
   "short_name": "TicTacToe",
-  "description": "Mainkan Tic Tac Toe bersama teman!",
-  "start_url": "./index.html",
-  "scope": "./",
-  "display": "standalone",
-  "background_color": "#130a4c",
-  "theme_color": "#ff0080",
-  "orientation": "portrait",
-  "dir": "ltr",
+  "description": "A fun and simple Tic Tac Toe game you can play offline.",
   "lang": "id",
-  "iarc_rating_id": "e10f1c00-0000-0000-0000-000000000000",
-  "prefer_related_applications": true,
-  "related_applications": [
-    {
-      "platform": "play",
-      "url": "https://play.google.com/store/apps/details?id=com.example.tictactoe",
-      "id": "com.example.tictactoe"
-    },
-    {
-      "platform": "itunes",
-      "url": "https://apps.apple.com/app/id1234567890",
-      "id": "1234567890"
-    }
-  ],
-  "scope_extensions": [
-    {
-      "origin": "https://example.com"
-    }
-  ],
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#4CAF50",
+  "prefer_related_applications": false,
   "icons": [
     {
-      "src": "icons/icon-192-any.png",
+      "src": "icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "icons/icon-192-maskable.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "icons/icon-512-any.png",
+      "src": "icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "icons/icon-512-maskable.png",
+      "src": "icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
@@ -58,18 +40,22 @@
   ],
   "screenshots": [
     {
-      "src": "screenshots/screen1.png",
-      "sizes": "540x720",
+      "src": "screenshots/screenshot1.png",
+      "sizes": "540x960",
       "type": "image/png"
     },
     {
-      "src": "screenshots/screen2.png",
-      "sizes": "540x720",
+      "src": "screenshots/screenshot2.png",
+      "sizes": "540x960",
       "type": "image/png"
     }
   ],
-  "launch_handler": {
-    "client_mode": "navigate-existing"
-  },
-  "gcm_sender_id": "103953800507"
+  "shortcuts": [
+    {
+      "name": "Main Menu",
+      "short_name": "Menu",
+      "url": "/",
+      "icons": [{ "src": "icons/icon-192x192.png", "sizes": "192x192" }]
+    }
+  ]
 }
