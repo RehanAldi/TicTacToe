@@ -12,12 +12,27 @@
   "dir": "ltr",
   "lang": "id",
   "iarc_rating_id": "e10f1c00-0000-0000-0000-000000000000",
-  "prefer_related_applications": false,
-  "related_applications": [],
-  "scope_extensions": [],
+  "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.example.tictactoe",
+      "id": "com.example.tictactoe"
+    },
+    {
+      "platform": "itunes",
+      "url": "https://apps.apple.com/app/id1234567890",
+      "id": "1234567890"
+    }
+  ],
+  "scope_extensions": [
+    {
+      "origin": "https://example.com"
+    }
+  ],
   "icons": [
     {
-      "src": "icons/icon-192-any.png",
+      "src": "icon-192-any.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
@@ -29,7 +44,7 @@
       "purpose": "maskable"
     },
     {
-      "src": "icons/icon-512-any.png",
+      "src": "icon-512-any.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
@@ -55,5 +70,6 @@
   ],
   "launch_handler": {
     "client_mode": "navigate-existing"
-  }
+  },
+  "gcm_sender_id": "103953800507"
 }
