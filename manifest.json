@@ -2,60 +2,45 @@
   "id": "/",
   "name": "Tic Tac Toe",
   "short_name": "TicTacToe",
-  "description": "A fun and simple Tic Tac Toe game you can play offline.",
-  "lang": "id",
-  "dir": "ltr",
-  "start_url": "/",
+  "description": "Mainkan game Tic Tac Toe klasik langsung dari browser Anda!",
+  "start_url": "/index.html",
   "scope": "/",
   "display": "standalone",
-  "orientation": "portrait",
   "background_color": "#ffffff",
-  "theme_color": "#4CAF50",
+  "theme_color": "#000000",
+  "orientation": "portrait",
+  "lang": "id",
+  "dir": "ltr",
   "prefer_related_applications": false,
   "icons": [
     {
-      "src": "icons/icon-192x192.png",
+      "src": "icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "icons/icon-512x512.png",
+      "src": "icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
-    },
-    {
-      "src": "icons/icon-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "icons/icon-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
     }
   ],
   "screenshots": [
     {
-      "src": "screenshots/screenshot1.png",
-      "sizes": "540x960",
-      "type": "image/png"
-    },
-    {
-      "src": "screenshots/screenshot2.png",
-      "sizes": "540x960",
-      "type": "image/png"
+      "src": "screenshot1.png",
+      "type": "image/png",
+      "sizes": "540x720",
+      "label": "Tampilan permainan Tic Tac Toe"
     }
   ],
   "shortcuts": [
     {
-      "name": "Main Menu",
-      "short_name": "Menu",
-      "url": "/",
-      "icons": [{ "src": "icons/icon-192x192.png", "sizes": "192x192" }]
+      "name": "Main Cepat",
+      "short_name": "Main",
+      "description": "Langsung mulai game baru",
+      "url": "/index.html",
+      "icons": [{ "src": "icon-192x192.png", "sizes": "192x192" }]
     }
   ]
 }
