@@ -14,7 +14,7 @@
   "prefer_related_applications": false,
   "icons": [
     {
-      "src": "icon-192x192.png",
+      "src": "https://github.com/RehanAldi/TicTacToe/blob/4654df8f46fdfdd5c8151a0c2991069d8436e14c/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
