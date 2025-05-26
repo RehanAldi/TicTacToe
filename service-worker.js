@@ -9,7 +9,7 @@ const urlsToCache = [
   "./icon-besar.png",
 ];
 
-// Install service worker dan cache semua resource penting
+// Install service worker dan cache file
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
@@ -18,7 +18,7 @@ self.addEventListener("install", (event) => {
   );
 });
 
-// Intercept request dan coba ambil dari cache, kalau tidak ada baru fetch dari network
+// Ambil dari cache saat offline
 self.addEventListener("fetch", (event) => {
   event.respondWith(
     caches.match(event.request).then((response) => {
@@ -26,16 +26,6 @@ self.addEventListener("fetch", (event) => {
     })
   );
 });
-
-// Optional: bisa tambah activate event untuk membersihkan cache lama (untuk update versi)
-self.addEventListener("activate", (event) => {
-  event.waitUntil(
-    caches.keys().then((cacheNames) =>
-      Promise.all(
-        cacheNames.map((cache) => {
-          if (cache !== CACHE_NAME) {
-            return caches.delete(cache);
-          }
         })
       )
     )
