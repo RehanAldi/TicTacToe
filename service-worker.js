@@ -6,7 +6,7 @@ const urlsToCache = [
   "./script.js",
   "./manifest.json",
   "./icon-kecil.png",
-  "./icon-besar.png"
+  "./icon-besar.png",
 ];
 
 // Install service worker dan cache semua resource penting
