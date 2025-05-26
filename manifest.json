@@ -3,10 +3,15 @@
   "short_name": "TicTacToe",
   "description": "Mainkan Tic Tac Toe bersama teman!",
   "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#130a4c",
   "theme_color": "#ff0080",
   "orientation": "portrait",
+  "lang": "id",
+  "dir": "ltr",
+  "categories": ["game", "puzzle", "entertainment"],
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "icons/icon-192.png",
