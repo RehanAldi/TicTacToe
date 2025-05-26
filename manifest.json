@@ -26,7 +26,7 @@
       "purpose": "maskable"
     },
     {
-      "src": "icon-512x512.png",
+      "src": "https://github.com/RehanAldi/TicTacToe/blob/07710fabbdcfaa36018647edf30d64eddb517778/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
