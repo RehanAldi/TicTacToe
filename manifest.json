@@ -20,7 +20,7 @@
       "purpose": "any"
     },
     {
-      "src": "icon-192x192-maskable.png",
+      "src": "icon-kecil.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
@@ -32,7 +32,7 @@
       "purpose": "any"
     },
     {
-      "src": "icon-512x512-maskable.png",
+      "src": "icon-besar.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
