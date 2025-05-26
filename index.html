@@ -51,13 +51,15 @@
     </div>
 
     <script>
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker
-        .register("service-worker.js")
-        .then((reg) => console.log("Service Worker terdaftar:", reg.scope))
-        .catch((err) => console.log("Service Worker gagal:", err));
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(reg => console.log('Service Worker terdaftar:', reg.scope))
+        .catch(err => console.log('Service Worker gagal:', err));
+      });
     }
-  </script>
+    </script>
+
 
     <script src="script.js"></script>
   </body>
